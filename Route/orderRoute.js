@@ -41,12 +41,6 @@ patch(
 
 
 
-orderRoute.route('/checkout-session/:cartID').
-post(
-    authController.protectRoute,
-    authController.checkAuthorization( 'user'),
-    orderController.checkoutSession
-);
 
 
 module.exports=orderRoute;
